@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #111111e8;
+  font-family: "Roboto", sans-serif;
+}
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  width: 100%;
+  padding: 20px;
+  border: 2px solid #438bf8;
+  background: #333232;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px 3px rgb(37, 66, 83);
+}
+.main_title {
+  text-align: center;
+  position: relative;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 28px;
+  margin-bottom: 24px;
+  color: #438bf8;
+}
+.main_title::after {
+  content: "";
+  width: 300px;
+  height: 2px;
+  background-color: #438bf8;
+  position: absolute;
+  bottom: -9px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sub_title {
+  margin-bottom: 5px;
+  font-size: 22px;
+  font-weight: 500;
+  color: #90d0ee;
+}
+.underline {
+  width: 100%;
+  background: #5597fa;
+  height: 1px;
+  margin: 9px 0px 17px;
+}
+#form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+#form label {
+  font-weight: 600;
+  color: #bfbbbb;
+}
+
+.task_name {
+  flex: 1;
+}
+.task_name input {
+  width: 80%;
+  border: none;
+  outline: none;
+  background-color: #ffffff;
+  height: 30px;
+  padding: 4px;
+  border-radius: 3px;
+}
+#form input,
+select {
+  outline: none;
+  background-color: #fcf8ff;
+  height: 33px;
+  border: none;
+  padding: 0px 4px;
+  margin: 0 5px;
+  border-radius: 3px;
+}
+#form .add_new_task input {
+  background-color: #5175e9;
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 15px;
+}
+#form .add_new_task input:hover {
+  background-color: #3159df;
+}
+
+.tools {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #bfbbbb;
+}
+.tools input {
+  outline: none;
+  background-color: #fafeff;
+  height: 34px;
+  border: none;
+  padding: 0px 8px;
+  margin: 0 5px;
+  border-radius: 3px;
+}
+
+table,
+thead,
+tbody,
+tr {
+  display: block;
+  width: 100%;
+  color: #dbcfcf;
+}
+tr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+thead {
+  padding: 10px 8px;
+  margin: 25px 0 13px;
+  background: #1b6fec;
+  border-radius: 5px;
+}
+#tbody tr {
+  padding: 7px 7px;
+  border-radius: 5px;
+  margin: 10px 0px;
+}
+#tbody > tr:hover {
+  background-color: #3176df;
+  transition: 0.2s;
+}
+td button {
+  background: unset;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+td button i {
+  pointer-events: none;
+  font-size: 24px;
+  margin: 0 5px;
+}
+#delete i {
+  color: rgb(245, 24, 24);
+}
+#check i {
+  color: #2bc94d;
+}
+#edit i {
+  color: #eeeb3e;
+}
+td,
+th {
+  flex: 1;
+  text-align: center;
+}
+.saveBtn {
+  font-size: 15px;
+  font-weight: 500;
+  border: 1px solid #1b2328;
+  padding: 3px 11px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.saveBtn:hover {
+  background: #0f92f3;
+  color: white;
+  border: none;
+}
+.dateInput {
+  padding: 2px 3px;
+  border-radius: 5px;
+  border: 1px solid #2b2b2b;
+  font-size: 14px;
+  font-weight: 500;
+}
+.nameInput {
+  padding: 2px 3px;
+  border-radius: 5px;
+  border: 1px solid #2b2b2b;
+  font-size: 14px;
+  font-weight: 500;
+}
+.selectInput {
+  outline: none;
+  background-color: #f0f2f5;
+  height: 25px;
+  border: 1px solid #2b2b2b;
+  padding: 0px 4px;
+  margin: 0 5px;
+  border-radius: 5px;
+}
