@@ -179,19 +179,15 @@ tBody.addEventListener("click", (e) => {
         saveBtn.className = "saveBtn";
         saveBtn.innerText = "Save";
         saveBtn.addEventListener("click", function () {
-          //name
           const newInputName = nameInput.value;
           nameTd.innerHTML = newInputName;
 
-          //priority
           const newPriority = priorityInput.value;
           priorityTd.innerHTML = newPriority;
 
-          //date
           const newDate = dateInput.value;
           dateId.innerHTML = newDate;
 
-          //action
           actionsTd.innerHTML = previousAction;
 
           let tasks = getDataLocalStorage();
